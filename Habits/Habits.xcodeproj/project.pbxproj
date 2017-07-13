@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A1B0AAFB1F17F97500205600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AAFA1F17F97500205600 /* AppDelegate.swift */; };
-		A1B0AAFD1F17F97500205600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AAFC1F17F97500205600 /* ViewController.swift */; };
-		A1B0AB001F17F97500205600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AAFE1F17F97500205600 /* Main.storyboard */; };
 		A1B0AB021F17F97500205600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB011F17F97500205600 /* Assets.xcassets */; };
-		A1B0AB051F17F97500205600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB031F17F97500205600 /* LaunchScreen.storyboard */; };
+		A1B0AB0F1F181BF100205600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AB0E1F181BF100205600 /* ViewController.swift */; };
+		A1B0AB111F181C0A00205600 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB101F181C0A00205600 /* Info.plist */; };
+		A1B0AB141F181C4F00205600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB121F181C4F00205600 /* LaunchScreen.storyboard */; };
+		A1B0AB151F181C4F00205600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB131F181C4F00205600 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1B0AAF71F17F97500205600 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B0AAFA1F17F97500205600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1B0AAFC1F17F97500205600 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A1B0AAFF1F17F97500205600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1B0AB011F17F97500205600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1B0AB041F17F97500205600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A1B0AB061F17F97500205600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B0AB0E1F181BF100205600 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		A1B0AB101F181C0A00205600 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		A1B0AB121F181C4F00205600 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1B0AB131F181C4F00205600 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +55,12 @@
 		A1B0AAF91F17F97500205600 /* Habits */ = {
 			isa = PBXGroup;
 			children = (
+				A1B0AB121F181C4F00205600 /* LaunchScreen.storyboard */,
+				A1B0AB131F181C4F00205600 /* Main.storyboard */,
+				A1B0AB101F181C0A00205600 /* Info.plist */,
+				A1B0AB0E1F181BF100205600 /* ViewController.swift */,
 				A1B0AAFA1F17F97500205600 /* AppDelegate.swift */,
-				A1B0AAFC1F17F97500205600 /* ViewController.swift */,
-				A1B0AAFE1F17F97500205600 /* Main.storyboard */,
 				A1B0AB011F17F97500205600 /* Assets.xcassets */,
-				A1B0AB031F17F97500205600 /* LaunchScreen.storyboard */,
-				A1B0AB061F17F97500205600 /* Info.plist */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -123,9 +124,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B0AB051F17F97500205600 /* LaunchScreen.storyboard in Resources */,
+				A1B0AB141F181C4F00205600 /* LaunchScreen.storyboard in Resources */,
+				A1B0AB111F181C0A00205600 /* Info.plist in Resources */,
 				A1B0AB021F17F97500205600 /* Assets.xcassets in Resources */,
-				A1B0AB001F17F97500205600 /* Main.storyboard in Resources */,
+				A1B0AB151F181C4F00205600 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +138,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B0AAFD1F17F97500205600 /* ViewController.swift in Sources */,
+				A1B0AB0F1F181BF100205600 /* ViewController.swift in Sources */,
 				A1B0AAFB1F17F97500205600 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A1B0AAFE1F17F97500205600 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1B0AAFF1F17F97500205600 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A1B0AB031F17F97500205600 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1B0AB041F17F97500205600 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A1B0AB071F17F97500205600 /* Debug */ = {
@@ -297,6 +280,7 @@
 				A1B0AB0B1F17F97500205600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
