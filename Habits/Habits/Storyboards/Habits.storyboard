@@ -13,7 +13,7 @@
         <!--Habits View-->
         <scene sceneID="Pe6-dM-Zcs">
             <objects>
-                <viewController id="CVl-2p-xvS" userLabel="Habits View" sceneMemberID="viewController">
+                <viewController id="CVl-2p-xvS" userLabel="Habits View" customClass="ListHabitsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sSc-pC-n2O"/>
                         <viewControllerLayoutGuide type="bottom" id="ujB-0Y-0Dq"/>
@@ -74,6 +74,7 @@
                                                     <rect key="frame" x="299" y="0.0" width="46" height="49.5"/>
                                                     <state key="normal" title="Button"/>
                                                     <connections>
+                                                        <action selector="addHabitButtonTapped:" destination="CVl-2p-xvS" eventType="touchUpInside" id="kBD-Az-9oe"/>
                                                         <segue destination="GLB-MR-p9h" kind="show" id="bCl-fY-uZS"/>
                                                     </connections>
                                                 </button>
@@ -129,6 +130,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Habits" id="RJZ-DX-5v6"/>
+                    <connections>
+                        <outlet property="addHabitButton" destination="Mfb-lx-zQT" id="9gn-9w-8i0"/>
+                        <outlet property="nameOfHabit" destination="kdU-Rx-64D" id="Tmk-cy-KQr"/>
+                        <outlet property="numberOfDays" destination="kf0-0Q-T2U" id="0bs-x0-iwf"/>
+                        <outlet property="numerOfPoints" destination="LRF-4o-mUa" id="YLY-ak-f8O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNP-Rv-fRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,7 +144,7 @@
         <!--Habits-->
         <scene sceneID="KLV-S1-gHV">
             <objects>
-                <viewController id="GLB-MR-p9h" sceneMemberID="viewController">
+                <viewController id="GLB-MR-p9h" customClass="HabitInformationViewController" customModule="Habits" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RPz-JI-3jD"/>
                         <viewControllerLayoutGuide type="bottom" id="9Pf-8o-EaN"/>
@@ -180,6 +187,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="habitName" destination="381-tG-bc1" id="5p9-AB-XAH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8Z-jX-yu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,7 +14,9 @@
 		A1B0AB141F181C4F00205600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB121F181C4F00205600 /* LaunchScreen.storyboard */; };
 		A1B0AB151F181C4F00205600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB131F181C4F00205600 /* Main.storyboard */; };
 		A1B0AB181F183FF500205600 /* Habits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B0AB171F183FF500205600 /* Habits.storyboard */; };
-		A1B0AB1B1F18842C00205600 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AB1A1F18842C00205600 /* HabitsViewController.swift */; };
+		A1B0AB1B1F18842C00205600 /* ListHabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AB1A1F18842C00205600 /* ListHabitsViewController.swift */; };
+		A1B0AB1D1F1C84B400205600 /* HabitInfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AB1C1F1C84B400205600 /* HabitInfomationViewController.swift */; };
+		A1B0AB1F1F1C8A8800205600 /* coreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B0AB1E1F1C8A8800205600 /* coreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,9 @@
 		A1B0AB121F181C4F00205600 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1B0AB131F181C4F00205600 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		A1B0AB171F183FF500205600 /* Habits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Habits.storyboard; path = Storyboards/Habits.storyboard; sourceTree = "<group>"; };
-		A1B0AB1A1F18842C00205600 /* HabitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitsViewController.swift; path = Controllers/HabitsViewController.swift; sourceTree = "<group>"; };
+		A1B0AB1A1F18842C00205600 /* ListHabitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListHabitsViewController.swift; path = Controllers/ListHabitsViewController.swift; sourceTree = "<group>"; };
+		A1B0AB1C1F1C84B400205600 /* HabitInfomationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitInfomationViewController.swift; path = Controllers/HabitInfomationViewController.swift; sourceTree = "<group>"; };
+		A1B0AB1E1F1C8A8800205600 /* coreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = coreDataHelper.swift; path = Helpers/coreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				A1B0AB191F18840F00205600 /* Controllers */,
 				A1B0AAFA1F17F97500205600 /* AppDelegate.swift */,
 				A1B0AB011F17F97500205600 /* Assets.xcassets */,
+				A1B0AB201F1C8A9100205600 /* Helpers */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -82,9 +87,18 @@
 			isa = PBXGroup;
 			children = (
 				A1B0AB0E1F181BF100205600 /* ViewController.swift */,
-				A1B0AB1A1F18842C00205600 /* HabitsViewController.swift */,
+				A1B0AB1A1F18842C00205600 /* ListHabitsViewController.swift */,
+				A1B0AB1C1F1C84B400205600 /* HabitInfomationViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A1B0AB201F1C8A9100205600 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1B0AB1E1F1C8A8800205600 /* coreDataHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B0AB0F1F181BF100205600 /* ViewController.swift in Sources */,
-				A1B0AB1B1F18842C00205600 /* HabitsViewController.swift in Sources */,
+				A1B0AB1D1F1C84B400205600 /* HabitInfomationViewController.swift in Sources */,
+				A1B0AB1B1F18842C00205600 /* ListHabitsViewController.swift in Sources */,
 				A1B0AAFB1F17F97500205600 /* AppDelegate.swift in Sources */,
+				A1B0AB1F1F1C8A8800205600 /* coreDataHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
