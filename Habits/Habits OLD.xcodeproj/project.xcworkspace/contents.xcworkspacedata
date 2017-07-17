@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Habits.xcodeproj">
+      location = "self:/Users/Emily/Desktop/Git Projects/habits/Habits/Habits OLD.xcodeproj">
    </FileRef>
 </Workspace>
